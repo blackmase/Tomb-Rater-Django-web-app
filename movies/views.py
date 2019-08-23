@@ -20,7 +20,7 @@ def create(request):
     if request.method == 'POST':
         data = {
             'Name': request.POST.get('name'),
-            'Pictures': [{'url': request.POST.get('url') or 'https://www.classicposters.com/images/nopicture.gif'}],
+            'Pictures': [{'url': request.POST.get('url') or 'https://cdn.shortpixel.ai/client/to_webp,q_lossy,ret_img/https://www.rspcansw.org.au/wp-content/themes/noPhotoFound.png'}],
             'Rating': int(request.POST.get('rating')),
             'Notes': request.POST.get('notes')
         }
